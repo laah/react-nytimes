@@ -12,7 +12,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + "/client/public"));
+app.use(express.static("/client/public"));
 
 // enable CORS, use:
 // https://enable-cors.org/server_expressjs.html
