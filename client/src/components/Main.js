@@ -44,7 +44,7 @@ class Main extends Component {
 
   // A helper method for rendering one div for each saved article
   renderSaved = () => {
-    return this.state.saved.map(save => (
+    if (this.state) return this.state.saved.map(save => (
       <Saved
         _id={save._id}
         key={save._id}
