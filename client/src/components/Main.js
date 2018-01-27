@@ -139,7 +139,7 @@ class Main extends Component {
               <i className="fa fa-github" aria-hidden="true"></i>
               Proudly built using React.js
             </p>
-          </footer>
+          </footer> 
         </div>
       </div>
 
