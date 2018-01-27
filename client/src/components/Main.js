@@ -44,7 +44,6 @@ class Main extends Component {
 
   // A helper method for rendering one div for each saved article
   renderSaved = () => {
-    if (!this.state) return;
     return this.state.saved.map(save => (
       <Saved
         _id={save._id}
@@ -127,7 +126,7 @@ class Main extends Component {
                   </div>
                   <div className="panel-body">
                     <ul className="list-group">
-                      {this.renderSaved()}
+                      {if (this.state) { this.renderSaved(); }}
                     </ul>
                   </div>
                 </div>
