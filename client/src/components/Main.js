@@ -126,7 +126,7 @@ class Main extends Component {
                   </div>
                   <div className="panel-body">
                     <ul className="list-group">
-                      {(this.state) ? this.renderSaved() : "" }
+                      {this.renderSaved()}
                     </ul>
                   </div>
                 </div>
